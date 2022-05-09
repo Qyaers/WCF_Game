@@ -1,0 +1,20 @@
+﻿<Window x:Class="ChatClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <TextBox x:Name="tbUserName" HorizontalAlignment="Left" Height="29" Margin="366,10,0,0" TextWrapping="Wrap" Text="Имя юзера" VerticalAlignment="Top" Width="141"/>
+        <Button x:Name="bConnDicon" Click="Button_Click" Content="Connect" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="147" Height="29"/>
+        <ListBox x:Name="lbChat" HorizontalAlignment="Left" Height="138" Margin="10,44,0,0" VerticalAlignment="Top" Width="497" SelectionChanged="lbChat_SelectionChanged"/>
+        <TextBox x:Name="tbMessage" HorizontalAlignment="Left" Height="58" Margin="10,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="497" KeyDown="tbMessage_KeyDown" TextChanged="tbMessage_TextChanged"/>
+        <Button x:Name="bRock" Content="Камень" HorizontalAlignment="Left" Margin="10,267,0,0" VerticalAlignment="Top" Width="121" Click="bRock_Click"/>
+        <Button x:Name="bPaper" Content="Бумага" HorizontalAlignment="Left" Margin="172,267,0,0" VerticalAlignment="Top" Width="168" Click="bPaper_Click"/>
+        <Button x:Name="bScissors" Content="Ножницы" HorizontalAlignment="Left" Margin="366,267,0,0" VerticalAlignment="Top" Width="141" Click="bScissors_Click"/>
+        <Button x:Name="bGameSS" Content="Начать игру" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" Width="168" Height="29" Click="bGameSS_Click"/>
+
+    </Grid>
+</Window>
